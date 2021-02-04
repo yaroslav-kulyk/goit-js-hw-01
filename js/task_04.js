@@ -9,9 +9,9 @@ buttonRef.addEventListener('click', () => {
     const totalPrice = droitQty * pricePerDroid;
 
     if (totalPrice > credits) {
-        alert('Недостаточно средств на счету!');
+        console.log('Недостаточно средств на счету!');
     } else {
         credits -= totalPrice;
-        alert(`Вы купили ${droitQty} дроидов, на счету осталось ${credits} кредитов.`)
+        console.log(`Вы купили ${droitQty} дроидов, на счету осталось ${credits} кредитов.`)
     }
 });
